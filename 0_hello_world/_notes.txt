@@ -1,0 +1,4 @@
+This is a study repo, this first section is just for familiarize myself with c++ syntax.
+
+important g++ commands: 
+    - g++ name_of_file.cpp; ./a.exe
