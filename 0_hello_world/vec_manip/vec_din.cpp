@@ -9,19 +9,20 @@ Calcule e exiba a soma, a média, o maior e o menor valor do vetor.
 
 #include <iostream>
 #include <climits>
+#include <vector>
 
 int main(){
-    //int vec[10] = {1,2,3,4,5,6,7,8,9,10};
-    
-    int vec[10] = {};
+    std::vector<int> vec;
 
     // só o sizeof retorna o umero de bytes
-    size_t tam_vec = sizeof(vec) / sizeof(vec[0]);
+    size_t tam_vec = 10;
 
     
     for (size_t i=0; i<tam_vec; ++i){
+        int value;
         std::cout << "Digite o valor: ";
-        std::cin >> vec[i];
+        std::cin >> value;
+        vec.push_back(value);
     }
     
     int sum = 0;
