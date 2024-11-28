@@ -1,0 +1,2 @@
+//to run in out on powershell
+cmd /c "g++ .\name_of_code.cpp -o a && a < in > out"
