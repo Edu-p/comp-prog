@@ -48,7 +48,7 @@ int main(){
     std::cout << "media " << mean << std::endl;
     std::cout << "maior " << maior << std::endl;
     std::cout << "menor " << menor << std::endl;
-
+    
     return 0;
 }
 
