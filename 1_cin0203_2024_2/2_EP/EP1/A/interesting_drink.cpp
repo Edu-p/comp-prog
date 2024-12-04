@@ -7,24 +7,32 @@ void how_many_greater_with_binary_search(long long num, vector<long long>& vec_t
     long long index_of_end = vec_to_make_bs.size() - 1;
     long long answer = -1;
 
+    // cout << num << " " << index_of_start << " " << index_of_end << " " <<  answer << "\n";
+
     while(index_of_end >= index_of_start){
         long long mid = (index_of_start+index_of_end) / 2;
+
+        cout << num << " " << index_of_start << " " << index_of_end << " " << mid << " " << answer << " ";
 
         // ir para direita se o num procurado por maior que o do index do meio, caso contrario ir para esquerda 
         if (num >= vec_to_make_bs[mid]){
             index_of_start = mid+1;
+            cout << "maior" << "\n";
         }
         else{
+            cout << "menor" << "\n";
             answer = mid;
             index_of_end = mid - 1;
         }
     }
-    if (answer == -1){
-        cout << vec_to_make_bs.size() << "\n";
-    }
-    else{
-        cout << answer << "\n";
-    }
+
+
+    // if (answer == -1){
+    //     cout << vec_to_make_bs.size() << "\n";
+    // }
+    // else{
+    //     cout << answer << "\n";
+    // }
     
     
 }
