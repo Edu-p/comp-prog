@@ -1,2 +1,5 @@
 //to run in out on powershell
 cmd /c "g++ .\name_of_code.cpp -o a && a < in > out"
+
+// in linux
+g++ ./palindrome_reorder.cpp && ./a.out <in> out
