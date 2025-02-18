@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#define ll long long int
+#define br '\n' 
 
 using namespace std;
 
